@@ -42,7 +42,7 @@ app.post('/api/calculate-net-price', (req, res) => {
     const netUnitPrice = line.listPrice * line.Quantity;
     return {
       lineId: line.lineId,
-      NetUnitPrice: netUnitPrice
+      NetUnitPrice: netUnitPrice * 10
     };
   });
   
